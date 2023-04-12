@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "FEA4D3C2-F299-422D-AAD3-937D8C057D47"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "45F519B3-A7AA-46D3-9E3C-28F290676FBB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ShoppingApp/TabBarController Tabs/ProfileTab/ProfileTab.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "24"
+            endingLineNumber = "24"
+            landmarkName = "initialize()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "45F519B3-A7AA-46D3-9E3C-28F290676FBB - b23479dba777f13e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoppingApp.ProfileTab.initialize() -&gt; ()"
+                  moduleName = "ShoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinchu/Documents/ShoppingApp/ShoppingApp/TabBarController%20Tabs/ProfileTab/ProfileTab.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "45F519B3-A7AA-46D3-9E3C-28F290676FBB - b23479dba777f13e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ShoppingApp.ProfileTab.initialize() -&gt; ()"
+                  moduleName = "ShoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rinchu/Documents/ShoppingApp/ShoppingApp/TabBarController%20Tabs/ProfileTab/ProfileTab.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "24"
+                  endingLineNumber = "24"
+                  offsetFromSymbolStart = "605">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="DOBPicker" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M4A-Ma-cya">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0gC-pu-EWD">
+                    <rect key="frame" x="25" y="250.33333333333334" width="325" height="311.33333333333326"/>
+                    <subviews>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" style="inline" useCurrentDate="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FxZ-5L-LrJ">
+                            <rect key="frame" x="0.0" y="0.0" width="325" height="311.33333333333331"/>
+                            <color key="tintColor" systemColor="tintColor"/>
+                            <date key="date" timeIntervalSinceReferenceDate="-94714199.045498013">
+                                <!--1997-12-31 18:30:00 +0000-->
+                            </date>
+                            <connections>
+                                <action selector="dateSelected:" destination="iN0-l3-epB" eventType="valueChanged" id="52V-zc-Mam"/>
+                            </connections>
+                        </datePicker>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="FxZ-5L-LrJ" firstAttribute="top" secondItem="0gC-pu-EWD" secondAttribute="top" id="DX0-d9-fGV"/>
+                        <constraint firstItem="FxZ-5L-LrJ" firstAttribute="leading" secondItem="0gC-pu-EWD" secondAttribute="leading" id="L0l-ch-f9d"/>
+                        <constraint firstAttribute="bottom" secondItem="FxZ-5L-LrJ" secondAttribute="bottom" id="Ov1-s7-et4"/>
+                        <constraint firstAttribute="height" constant="311.30000000000001" id="RBE-Jb-9s3"/>
+                        <constraint firstAttribute="trailing" secondItem="FxZ-5L-LrJ" secondAttribute="trailing" id="rf9-wp-vQU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="16"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="0gC-pu-EWD" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="Fm2-QI-MgS"/>
+                <constraint firstItem="0gC-pu-EWD" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TNJ-Ck-elo"/>
+                <constraint firstAttribute="bottom" secondItem="M4A-Ma-cya" secondAttribute="bottom" id="TYQ-Vi-H9h"/>
+                <constraint firstAttribute="trailing" secondItem="M4A-Ma-cya" secondAttribute="trailing" id="Wba-84-xgb"/>
+                <constraint firstItem="M4A-Ma-cya" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Yqm-WW-xDX"/>
+                <constraint firstAttribute="trailing" secondItem="0gC-pu-EWD" secondAttribute="trailing" constant="25" id="iRt-g2-QY1"/>
+                <constraint firstItem="M4A-Ma-cya" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ktT-CD-p4n"/>
+                <constraint firstItem="0gC-pu-EWD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="25" id="q0Z-t8-Ic7"/>
+            </constraints>
+            <connections>
+                <outlet property="calanderView" destination="0gC-pu-EWD" id="rPi-8Y-OkS"/>
+                <outlet property="datePicker" destination="FxZ-5L-LrJ" id="wAp-si-8Od"/>
+                <outlet property="tapView" destination="M4A-Ma-cya" id="edc-zu-dCz"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SelectProfileImageVCCollectionCell" id="gTV-IL-0wX" customClass="SelectProfileImageVCCollectionCell" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="164" height="226"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="164" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kia-yr-All">
+                        <rect key="frame" x="0.0" y="0.0" width="164" height="226"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gGA-UY-9f0">
+                                <rect key="frame" x="0.0" y="0.0" width="156" height="226"/>
+                                <color key="backgroundColor" red="0.95686274509803915" green="0.95294117647058818" blue="0.95686274509803915" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AWe-kV-d9W">
+                                <rect key="frame" x="141.5" y="203.5" width="22.5" height="22.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="AWe-kV-d9W" secondAttribute="height" multiplier="1:1" id="cay-Ig-ZFm"/>
+                                </constraints>
+                                <color key="tintColor" red="0.95686274510000002" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="plus" catalog="system">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="AWe-kV-d9W" secondAttribute="trailing" id="1Fs-gS-kiM"/>
+                            <constraint firstAttribute="trailing" secondItem="gGA-UY-9f0" secondAttribute="trailing" constant="8" id="LKc-Sq-pec"/>
+                            <constraint firstAttribute="bottom" secondItem="AWe-kV-d9W" secondAttribute="bottom" id="cyw-Kf-cdp"/>
+                            <constraint firstItem="gGA-UY-9f0" firstAttribute="leading" secondItem="Kia-yr-All" secondAttribute="leading" id="f3b-7m-GrD"/>
+                            <constraint firstAttribute="bottom" secondItem="gGA-UY-9f0" secondAttribute="bottom" id="l9u-dQ-4T1"/>
+                            <constraint firstItem="AWe-kV-d9W" firstAttribute="height" secondItem="Kia-yr-All" secondAttribute="height" multiplier="0.1" id="qKh-Vs-pxg"/>
+                            <constraint firstItem="gGA-UY-9f0" firstAttribute="top" secondItem="Kia-yr-All" secondAttribute="top" id="wl5-8C-5W0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Kia-yr-All" secondAttribute="trailing" id="6Df-7d-DAa"/>
+                <constraint firstItem="Kia-yr-All" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FFV-Ak-xs6"/>
+                <constraint firstItem="Kia-yr-All" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="feh-2a-qZ5"/>
+                <constraint firstAttribute="bottom" secondItem="Kia-yr-All" secondAttribute="bottom" id="pL7-J9-9vy"/>
+            </constraints>
+            <size key="customSize" width="164" height="226"/>
+            <connections>
+                <outlet property="addPhoto" destination="AWe-kV-d9W" id="yEx-hR-2ec"/>
+                <outlet property="imageView" destination="gGA-UY-9f0" id="YxK-jV-DAl"/>
+            </connections>
+            <point key="canvasLocation" x="214.49275362318843" y="168.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

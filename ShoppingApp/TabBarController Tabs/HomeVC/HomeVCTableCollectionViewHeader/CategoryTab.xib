@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CategoryTab" id="gTV-IL-0wX" customClass="CategoryTab" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EZp-N8-UaB">
+                        <rect key="frame" x="0.0" y="10" width="50" height="30"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vY2-b8-zFV">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="vY2-b8-zFV" secondAttribute="bottom" id="Jfr-mg-ayY"/>
+                            <constraint firstItem="vY2-b8-zFV" firstAttribute="top" secondItem="EZp-N8-UaB" secondAttribute="top" id="Noh-6m-phW"/>
+                            <constraint firstAttribute="trailing" secondItem="vY2-b8-zFV" secondAttribute="trailing" id="mIK-Rk-ejY"/>
+                            <constraint firstItem="vY2-b8-zFV" firstAttribute="leading" secondItem="EZp-N8-UaB" secondAttribute="leading" id="reg-yU-yy0"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="EZp-N8-UaB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3du-wy-oto"/>
+                <constraint firstAttribute="trailing" secondItem="EZp-N8-UaB" secondAttribute="trailing" id="huo-aI-LlM"/>
+                <constraint firstAttribute="bottom" secondItem="EZp-N8-UaB" secondAttribute="bottom" constant="10" id="l11-Op-pys"/>
+                <constraint firstItem="EZp-N8-UaB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="10" id="qMo-s1-vTq"/>
+            </constraints>
+            <connections>
+                <outlet property="tab" destination="vY2-b8-zFV" id="4lk-Qg-lYA"/>
+                <outlet property="tabView" destination="EZp-N8-UaB" id="vGx-CK-cpx"/>
+            </connections>
+            <point key="canvasLocation" x="-13" y="102"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

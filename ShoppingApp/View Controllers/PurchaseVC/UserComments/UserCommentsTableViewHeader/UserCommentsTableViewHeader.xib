@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="UserCommentsTableViewHeader" id="iN0-l3-epB" customClass="UserCommentsTableViewHeader" customModule="ShoppingApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="504" height="228"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q7h-nC-NkP">
+                    <rect key="frame" x="10" y="10" width="484" height="208"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keS-lo-smk">
+                            <rect key="frame" x="10" y="9.9999999999999982" width="464" height="20.333333333333329"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" name="AppDarkBlueColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6A-Ok-19w">
+                            <rect key="frame" x="10" y="40.333333333333336" width="464" height="121.66666666666666"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                            <color key="textColor" name="AppDarkBlueColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comments : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hwi-pj-C1D">
+                            <rect key="frame" x="10" y="177" width="100" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="100" id="e8y-sf-DYw"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                            <color key="textColor" name="AppDarkBlueColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Poh-Nh-slW">
+                            <rect key="frame" x="120" y="177" width="354" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" name="AppDarkBlueColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="q6A-Ok-19w" firstAttribute="top" secondItem="keS-lo-smk" secondAttribute="bottom" constant="10" id="2M3-cE-e9J"/>
+                        <constraint firstAttribute="trailing" secondItem="Poh-Nh-slW" secondAttribute="trailing" constant="10" id="8IM-fx-8YR"/>
+                        <constraint firstItem="keS-lo-smk" firstAttribute="leading" secondItem="Q7h-nC-NkP" secondAttribute="leading" constant="10" id="9V6-QZ-JdG"/>
+                        <constraint firstItem="keS-lo-smk" firstAttribute="top" secondItem="Q7h-nC-NkP" secondAttribute="top" constant="10" id="DGh-J9-syo"/>
+                        <constraint firstItem="Poh-Nh-slW" firstAttribute="leading" secondItem="hwi-pj-C1D" secondAttribute="trailing" constant="10" id="F5E-1w-ent"/>
+                        <constraint firstItem="hwi-pj-C1D" firstAttribute="top" secondItem="q6A-Ok-19w" secondAttribute="bottom" constant="15" id="HmK-Ea-7xa"/>
+                        <constraint firstAttribute="trailing" secondItem="q6A-Ok-19w" secondAttribute="trailing" constant="10" id="WiC-kI-AUC"/>
+                        <constraint firstAttribute="bottom" secondItem="hwi-pj-C1D" secondAttribute="bottom" constant="10" id="ab4-QM-7f2"/>
+                        <constraint firstAttribute="trailing" secondItem="keS-lo-smk" secondAttribute="trailing" constant="10" id="m7O-3S-qqr"/>
+                        <constraint firstItem="Poh-Nh-slW" firstAttribute="top" secondItem="hwi-pj-C1D" secondAttribute="top" id="mkK-Sf-cyx"/>
+                        <constraint firstItem="hwi-pj-C1D" firstAttribute="leading" secondItem="Q7h-nC-NkP" secondAttribute="leading" constant="10" id="nPi-et-def"/>
+                        <constraint firstItem="q6A-Ok-19w" firstAttribute="leading" secondItem="Q7h-nC-NkP" secondAttribute="leading" constant="10" id="tA5-al-e5p"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Q7h-nC-NkP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="CzT-fg-g7v"/>
+                <constraint firstAttribute="trailing" secondItem="Q7h-nC-NkP" secondAttribute="trailing" constant="10" id="Rs4-IL-Xec"/>
+                <constraint firstAttribute="bottom" secondItem="Q7h-nC-NkP" secondAttribute="bottom" constant="10" id="VOY-0s-77N"/>
+                <constraint firstItem="Q7h-nC-NkP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="zbS-7b-ySn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblCommentCount" destination="Poh-Nh-slW" id="wIe-7N-Gc8"/>
+                <outlet property="lblDescription" destination="q6A-Ok-19w" id="oBz-Mh-UbC"/>
+                <outlet property="lblTitle" destination="keS-lo-smk" id="lgS-oQ-d2y"/>
+                <outlet property="userCommentsTableViewHeaderView" destination="Q7h-nC-NkP" id="Ptw-eM-6iz"/>
+            </connections>
+            <point key="canvasLocation" x="120.61068702290076" y="-38.028169014084511"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AppDarkBlueColor">
+            <color red="0.0080000003799796104" green="0.0020000000949949026" blue="0.29800000786781311" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
